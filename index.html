@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Egypt-based sourcing agency helping U.S. brands import high-quality medical scrubs under CIF or QIZ agreements.">
+
+    <title>Medical Scrubs from Egypt - Presentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            overflow-x: hidden;
+        }
+
+        .presentation-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .slide {
+            background: white;
+            border-radius: 20px;
+            padding: 60px;
+            margin: 30px 0;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            min-height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            animation: slideIn 0.6s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .slide h1 {
+            color: #667eea;
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .slide h2 {
+            color: #764ba2;
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .slide h3 {
+            color: #667eea;
+            font-size: 1.6em;
+            margin: 25px 0 15px 0;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .content {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .emoji {
+            font-size: 1.3em;
+            margin-right: 10px;
+        }
+
+        .bullet-point {
+            margin: 15px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .bullet-point:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 25px 0;
+            border-left: 5px solid #667eea;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 1em;
+        }
+
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            color: white;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .cta-button {
+            background: white;
+            color: #667eea;
+            padding: 15px 35px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .fabric-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin: 25px 0;
+        }
+
+        .fabric-card {
+            border: 2px solid #667eea;
+            border-radius: 15px;
+            padding: 25px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .fabric-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .fabric-title {
+            color: #764ba2;
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .fabric-composition {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-weight: 600;
+            color: #667eea;
+        }
+
+        .price-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .testimonial {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 25px 0;
+            border-left: 5px solid #764ba2;
+            font-style: italic;
+            position: relative;
+        }
+
+        .testimonial:before {
+            content: '"';
+            font-size: 4em;
+            color: #667eea;
+            opacity: 0.3;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+
+        .author {
+            text-align: right;
+            margin-top: 15px;
+            font-weight: 600;
+            color: #764ba2;
+            font-style: normal;
+        }
+
+        .comparison-highlight {
+            background: #fff3cd;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .slide {
+                padding: 30px;
+                min-height: auto;
+            }
+
+            .slide h1 {
+                font-size: 2em;
+            }
+
+            .slide h2 {
+                font-size: 1.6em;
+            }
+
+            .stats-grid, .fabric-grid {
+                grid-template-columns: 1fr;
+            }
+
+            table {
+                font-size: 0.85em;
+            }
+
+            th, td {
+                padding: 10px 5px;
+            }
+        }
+
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            width: 0%;
+            z-index: 1000;
+            transition: width 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    
+    <div class="presentation-container">
+        <!-- Slide 1: Title -->
+        <div class="slide">
+            <h1>🩺 Medical Scrubs from Egypt</h1>
+            <h2>Your Strategic Manufacturing Partner</h2>
+            <div class="subtitle">Presented by EastWay</div>
+            <div class="subtitle">Egypt-Based Sourcing Agency | Serving U.S. Healthcare Brands</div>
+        </div>
+
+        <!-- Slide 2: Market Opportunity -->
+        <div class="slide">
+            <h2>The U.S. Medical Scrubs Market</h2>
+            <h3>A $12 Billion Opportunity That's Growing</h3>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">18M+</div>
+                    <div class="stat-label">Healthcare workers wearing scrubs daily</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">6.2%</div>
+                    <div class="stat-label">Annual market growth through 2028</div>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <h3>Current Pain Points:</h3>
+                <div class="bullet-point">Supply chain disruptions from Asia (60+ day lead times)</div>
+                <div class="bullet-point">High MOQs prevent small brands from entering market</div>
+                <div class="bullet-point">Rising tariffs eating into margins (15-30% from Asian countries)</div>
+                <div class="bullet-point">Inconsistent quality from overseas manufacturers</div>
+            </div>
+
+            <div class="content">
+                <strong>The Opportunity:</strong> Mid-market brands offering quality, reliability, and reasonable pricing are winning.
+            </div>
+        </div>
+
+        <!-- Slide 3: Why Egypt -->
+        <div class="slide">
+            <h2>Why Egypt? The Hidden Manufacturing Advantage</h2>
+            
+            <div class="highlight-box">
+                <h3>🌍 Geography Matters</h3>
+                <div class="bullet-point">Mediterranean location = 18-25 day shipping to U.S. East Coast</div>
+                <div class="bullet-point">7-10 days faster than Asia, reducing inventory risk</div>
+                <div class="bullet-point">Same time zone proximity as Europe (easier communication)</div>
+            </div>
+
+            <div class="highlight-box">
+                <h3>🧵 100+ Year Textile Heritage</h3>
+                <div class="bullet-point">Egypt is the birthplace of premium cotton</div>
+                <div class="bullet-point">Skilled workers with generations of expertise</div>
+                <div class="bullet-point">Established quality standards meeting EU/US requirements</div>
+            </div>
+
+            <div class="highlight-box">
+                <h3>💰 The Cost Sweet Spot</h3>
+                <div class="bullet-point">20-35% lower than U.S. domestic production</div>
+                <div class="bullet-point">Comparable to Asia WITHOUT the 15-30% tariff burden</div>
+                <div class="bullet-point">Better quality control than budget manufacturers</div>
+            </div>
+
+            <div class="highlight-box">
+                <h3>🤝 Flexibility for Growing Brands</h3>
+                <div class="bullet-point">MOQ as low as 100 pieces (vs. 500-2000 elsewhere)</div>
+                <div class="bullet-point">Responsive to design changes and customization</div>
+                <div class="bullet-point">English-speaking business culture</div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Fabric Options -->
+        <div class="slide">
+            <h2>Our Fabric Options - Quality You Can Feel</h2>
+            
+            <div class="fabric-grid">
+                <div class="fabric-card">
+                    <div class="fabric-title">Premium Natural Blend</div>
+                    <div class="fabric-composition">Linen + Polyester</div>
+                    <div class="bullet-point">Breathable luxury feel</div>
+                    <div class="bullet-point">Natural temperature regulation</div>
+                    <div class="bullet-point">Premium brand positioning</div>
+                    <div><strong>Best for:</strong> High-end boutique brands</div>
+                    
+                </div>
+
+                <div class="fabric-card">
+                    <div class="fabric-title">Performance Comfort ⭐ MOST POPULAR</div>
+                    <div class="fabric-composition">Polyester + Viscose + Spandex</div>
+                    <div class="bullet-point">Soft against skin, exceptional stretch</div>
+                    <div class="bullet-point">Maintains shape after 100+ washes</div>
+                    <div class="bullet-point">Professional appearance all day</div>
+                    <div><strong>Best for:</strong> Value-conscious quality brands</div>
+                    
+                </div>
+
+                <div class="fabric-card">
+                    <div class="fabric-title">Budget-Friendly Professional</div>
+                    <div class="fabric-composition">Polyester 100%</div>
+                    <div class="bullet-point">Lightweight and easy-care</div>
+                    <div class="bullet-point">Quick-dry, stain-resistant</div>
+                    <div class="bullet-point">Durable for high-volume use</div>
+                    <div><strong>Best for:</strong> Budget brands, institutions</div>
+                    
+                </div>
+
+                <div class="fabric-card">
+                    <div class="fabric-title">Modern Athletic Fit</div>
+                    <div class="fabric-composition">Polyester 92% + Lycra 8%</div>
+                    <div class="bullet-point">Maximum stretch and movement</div>
+                    <div class="bullet-point">Wrinkle-resistant, fitted silhouette</div>
+                    <div class="bullet-point">Contemporary styling</div>
+                    <div><strong>Best for:</strong> Fashion-forward brands</div>
+                    
+                </div>
+            </div>
+
+            <div class="content" style="text-align: center; margin-top: 30px;">
+                <strong>All fabrics available in 10+ colors | Custom dyeing available for orders 500+</strong>
+            </div>
+        </div>
+
+        <!-- Slide 5: Order Paths -->
+        <div class="slide">
+            <h2>Two Order Paths - Choose What Works for You</h2>
+            
+            <div class="stats-grid">
+                <div class="highlight-box">
+                    <h3>Path 1: Standard Production</h3>
+                    <div class="subtitle">Perfect for startups and testing</div>
+                    <div class="bullet-point"><strong>MOQ:</strong> 100 pieces (mix sizes/colors)</div>
+                    <div class="bullet-point"><strong>Customs duty:</strong> 10% to U.S.</div>
+                    <div class="bullet-point"><strong>Lead time:</strong> 4-5 weeks production + 3 weeks shipping</div>
+                    <div class="bullet-point"><strong>Best for:</strong> New brands, seasonal testing, small retailers</div>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>Path 2: QIZ Duty-Free Program</h3>
+                    <div class="subtitle">Scale with zero tariffs</div>
+                    <div class="bullet-point"><strong>MOQ:</strong> 1,000 pieces</div>
+                    <div class="bullet-point"><strong>Customs duty:</strong> 0% (completely duty-free)</div>
+                    <div class="bullet-point"><strong>Lead time:</strong> 5-6 weeks production + 3 weeks shipping</div>
+                    <div class="bullet-point"><strong>Best for:</strong> Established brands, major launches</div>
+                </div>
+            </div>
+
+            <div class="cta-box">
+                <h3>Real Savings Example</h3>
+                <div class="content">
+                    Order of 1,000 sets at $12 each = $12,000<br>
+                    Standard 10% duty = $1,200<br>
+                    <strong style="font-size: 1.4em;">QIZ savings = $1,200 per order</strong><br>
+                    (goes straight to your margin!)
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: QIZ Advantage -->
+        <div class="slide">
+            <h2>Understanding the QIZ Advantage</h2>
+            
+            <div class="highlight-box">
+                <h3>What is QIZ?</h3>
+                <div class="content">
+                    The Qualified Industrial Zone agreement is a trade partnership between Egypt, the U.S., and Israel that eliminates customs duties entirely.
+                </div>
+            </div>
+
+            <div class="content">
+                <h3>Requirements:</h3>
+                <p>35% of materials/labor must come from QIZ-designated areas in Egypt</p>
+                <p style="margin-top: 10px;"><strong>(We handle ALL compliance)</strong></p>
+            </div>
+
+            <div class="highlight-box" style="margin-top: 30px;">
+                <h3>Your Benefits:</h3>
+                <div class="bullet-point"><strong>0% customs fees</strong> instead of 10% standard duty</div>
+                <div class="bullet-point"><strong>Better margins</strong> - keep an extra $1-2 per garment</div>
+                <div class="bullet-point"><strong>Price competitiveness</strong> vs. Asian imports paying 15-30%</div>
+                <div class="bullet-point"><strong>Simplified customs</strong> - faster clearance at U.S. ports</div>
+                <div class="bullet-point"><strong>Long-term reliability</strong> - established agreement since 2004</div>
+            </div>
+
+            <div class="cta-box">
+                <h3>We Handle The Paperwork</h3>
+                <div class="bullet-point">Certificate of Origin preparation</div>
+                <div class="bullet-point">QIZ compliance documentation</div>
+                <div class="bullet-point">Customs filing and coordination</div>
+                <div style="margin-top: 20px; font-size: 1.2em;"><strong>You receive duty-free goods, hassle-free</strong></div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Slide 7: Services -->
+        <div class="slide">
+            <h2>Our Complete Service</h2>
+            <h3 style="text-align: center; margin-bottom: 30px;">You Focus on Sales, We Handle Everything Else</h3>
+            
+            <div class="highlight-box">
+                <h3>Factory & Production Management</h3>
+                <div class="bullet-point">Vetted manufacturer network (10+ years relationships)</div>
+                <div class="bullet-point">Pre-production samples (2-3 rounds included)</div>
+                <div class="bullet-point">In-line quality inspections during production</div>
+                <div class="bullet-point">Final inspection before shipment</div>
+                <div class="bullet-point">Detailed photo documentation at each stage</div>
+            </div>
+
+            <div class="highlight-box">
+                <h3>Materials & Customization</h3>
+                <div class="bullet-point">Fabric sourcing and quality testing</div>
+                <div class="bullet-point">Custom dye lots (500+ pieces)</div>
+                <div class="bullet-point">Your private labels and hang tags</div>
+                <div class="bullet-point">Custom packaging options</div>
+                <div class="bullet-point">Size grading for U.S. fit standards</div>
+            </div>
+
+            <div class="highlight-box">
+                <h3>Compliance & Logistics</h3>
+                <h4>We ship under the CIF model — meaning we cover:</h4>
+                <div class="bullet-point">QIZ certification coordination (when applicable)</div>
+                <div class="bullet-point">All export documentation</div>
+                <div class="bullet-point">Freight forwarding (sea or air)</div>
+                <div class="bullet-point">Delivery to your nearest port</div>
+            </div>
+
+            <div class="cta-box">
+                <h3>Quality Guarantees</h3>
+                <div class="bullet-point">Pre-shipment inspection reports</div>
+                <div class="bullet-point">Defect rate guarantee: &lt;2%</div>
+                <div class="bullet-point">30-day claim window for manufacturing defects</div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Success Stories -->
+        <div class="slide">
+            <h2>Success Stories</h2>
+            
+            <div class="highlight-box">
+                <h3>Case Study: Comfort Care Scrubs</h3>
+                <div class="bullet-point">Launched with 300-piece test order (3 styles, multiple sizes)</div>
+                <div class="bullet-point">Tested market for 2 months</div>
+                <div class="bullet-point">Scaled to 2,000-piece QIZ orders quarterly</div>
+                <div class="bullet-point"><strong>Result:</strong> 32% margin vs. 18% with previous Asian supplier</div>
+            </div>
+
+
+        </div>
+
+        <!-- Slide 9: Payment Options -->
+        <div class="slide">
+            <h2>Flexible Payment Options - Your Security Matters</h2>
+            <h3 style="text-align: center; color: #764ba2;">We Understand Trust Takes Time</h3>
+            
+            <div class="content" style="text-align: center; font-size: 1.2em; margin: 30px 0;">
+                For first-time clients, we offer secure payment through trusted platforms where your money is protected until you're satisfied with the work.
+            </div>
+
+            <div class="stats-grid">
+                <div class="highlight-box">
+                    <h3>🔒 Option 1: Direct Payment</h3>
+                    <div class="subtitle" style="margin: 20px 0;"><strong>Best Value - No Extra Fees</strong></div>
+                    <div class="bullet-point">Standard pricing as quoted</div>
+                    <div class="bullet-point">Bank transfer or wire payment</div>
+                    <div class="bullet-point">50% deposit, 50% once shipping is confirmed</div>
+                    <div class="bullet-point">Ideal for established relationships</div>
+                    <div class="stat-number" style="font-size: 2em; color: #667eea; margin-top: 20px;">0%</div>
+                    <div class="stat-label" style="color: #333;">Platform Fees</div>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>🛡️ Option 2: Upwork Platform</h3>
+                    <div class="subtitle" style="margin: 20px 0;"><strong>Buyer Protection + Escrow</strong></div>
+                    <div class="bullet-point">Payment held in escrow until delivery</div>
+                    <div class="bullet-point">Upwork's dispute resolution</div>
+                    <div class="bullet-point">Milestone-based releases</div>
+                    <div class="stat-number" style="font-size: 2em; color: #667eea; margin-top: 20px;">+15%</div>
+                    <div class="stat-label" style="color: #333;">Added to Quote</div>
+                </div>
+            </div>
+
+
+
+            <div class="cta-box" style="margin-top: 40px;">
+                <h3>Example Pricing</h3>
+                <div class="content" style="font-size: 1.1em; line-height: 2.2;">
+                    <strong>Sample Order: 500 pieces at $12/set = $6,000</strong><br><br>
+                    💰 Direct Payment: <strong>$6,000</strong><br>
+                    🛡️ Via Upwork: <strong>$6,900</strong> (+$900 for Upwork fees)<br>
+                </div>
+                <div style="margin-top: 25px; font-size: 1.1em;">
+                    <strong>Your peace of mind is worth it.</strong><br>
+                    Choose the payment method that makes you comfortable.
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Slide 10: Next Steps -->
+        <div class="slide">
+            <h2>Your Next Steps</h2>
+            <h3 style="text-align: center;">Ready to Source Smarter?</h3>
+            
+            <div class="highlight-box">
+                <h3>Option 1: Start Small (Recommended for New Brands)</h3>
+                <div class="subtitle">📦 <strong>Sample Pack</strong></div>
+                <div class="bullet-point">3 complete sets in different fabric options</div>
+                <div class="bullet-point">Your choice of colors</div>
+                <div class="bullet-point">See and feel the quality firsthand</div>
+                
+            </div>
+
+            <div class="highlight-box">
+                <h3>Option 2: First Production Order</h3>
+                <div class="subtitle">📊 <strong>Get a Custom Quote - Free</strong></div>
+                <div class="bullet-point">Tell us your design vision</div>
+                <div class="bullet-point">Receive detailed pricing for 100-1,000 pieces</div>
+                <div class="bullet-point">Timeline and material recommendations</div>
+                <div class="bullet-point">No obligation</div>
+            </div>
+
+            <div class="highlight-box">
+                <h3>Option 3: Learn More</h3>
+                <div class="subtitle">📞 <strong>Schedule a 30-Minute Consultation - Free</strong></div>
+                <div class="bullet-point">Discuss your brand goals</div>
+                <div class="bullet-point">Review fabric options for your market</div>
+                <div class="bullet-point">Understand MOQ and pricing tiers</div>
+                <div class="bullet-point">Get answers to all your questions</div>
+            </div>
+        </div>
+
+        <!-- Slide 11: Contact -->
+        <div class="slide">
+            <h2 style="text-align: center;">Contact Us Today</h2>
+            
+            <div class="cta-box">
+                <h3>Medtex Egy</h3>
+                <div class="subtitle" style="color: white; margin: 20px 0;">Your Bridge to Egyptian Manufacturing Excellence</div>
+                
+                <div class="content" style="font-size: 1.2em; line-height: 2.5; margin: 30px 0;">
+                    📧 <strong>Email:</strong> steven.rauof@gmail.com<br>
+                    📱 <strong>WhatsApp:</strong> +201276354648<br>
+                    🌐 <strong>Website:</strong> www.yourcompany.com<br>
+                    📍 <strong>Based in:</strong> Cairo, Egypt | Serving U.S. Brands Nationwide
+                </div>
+
+                <div style="margin-top: 30px; font-size: 1.1em;">
+                    <strong>Response Time:</strong> Within 12 hours on business days
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="mailto:steven.rauof@gmail.com" class="cta-button">Send Email</a>
+                    <a href="callto:+201276354648" class="cta-button">Schedule Call</a>
+                    <a href="mailto:steven.rauof@gmail.com" class="cta-button">Request Quote</a>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px; font-size: 1.3em; color: #667eea; font-weight: 600;">
+                Let's build your scrubs brand together.<br>
+                Egypt's quality. Your vision. America's market.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Progress bar on scroll
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.slide').forEach(slide => {
+            observer.observe(slide);
+        });
+    </script>
+</body>
+</html>
